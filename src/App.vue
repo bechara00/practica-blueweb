@@ -91,6 +91,9 @@ const handleClick2 = (mensaje) => {
   </ul>
   <button @click="handleClick">Activame</button>
   <button @click="handleClick2('hola perro')">Activame 2</button>
+  <button @click.right.prevent="handleClick2('Texto Rigth')">Activame rigth</button>
+  <button @click.left="handleClick2('Texto Left')">Activame Left</button>
+  <button @click.middle="handleClick2('Texto Middle')">Activame middle</button>
 </template>
 
 <style>
